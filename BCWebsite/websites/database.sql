@@ -1,6 +1,6 @@
 -- MariaDB dump 10.19  Distrib 10.5.19-MariaDB, for Linux (x86_64)
 --
--- Host: mysql    Database: as1csy2028
+-- Host: mysql    Database: credit_card
 -- ------------------------------------------------------
 -- Server version	11.3.2-MariaDB-1:11.3.2+maria~ubu2204
 
@@ -14,8 +14,6 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
-
 
 --
 -- Current Database: `credit_card`
@@ -85,9 +83,6 @@ UNLOCK TABLES;
 --
 -- Dumping routines for database 'credit_card'
 --
-
-
-
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -98,4 +93,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-03 16:05:52
+-- Dump completed on 2024-04-03 18:53:43

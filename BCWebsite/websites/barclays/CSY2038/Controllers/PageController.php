@@ -204,6 +204,17 @@ class PageController
         $_SESSION['address_details'] = $addressData;
     }
 
+    public function generateCreditScore(){
+
+        $dataOnFile = $this->dbCreditScore->find('userid',1);
+        //Late/ Missed Payment data + Overdrafting 35%
+
+        //Annual Income 
+
+        //Housing Status - mortaged and renting means something - 30%
+
+
+    }
 
 
     public function session()
