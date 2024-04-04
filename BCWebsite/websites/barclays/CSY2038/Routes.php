@@ -19,7 +19,6 @@ class Routes implements \CSY\Routes
         if ($_SERVER['REQUEST_URI'] !== '/') {
             $functionName = ltrim(explode('?', $_SERVER['REQUEST_URI'])[0], '/');
             if (str_contains($functionName, "/")) {
-                //                $page = $pageController->$functionName();
                 $r = explode("/", $functionName);
 
                 $pageController = "CSY2038\Controllers\\" . ucfirst($r[0]) . "Controller";
