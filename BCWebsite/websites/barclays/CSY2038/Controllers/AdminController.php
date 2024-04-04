@@ -50,6 +50,33 @@ class AdminController
         ];
     }
 
+    public function viewApplication(){
+        // $this->chklogin();
+
+        if(!isset($_GET['id'])){
+            header('location: dashboard');
+            exit();
+        }
+        $this->session();
+        
+        // $details =  get data details from database
+        $details = [];
+
+        
+
+        
+        
+
+        return [
+            'template' => 'admin/viewApplication.html.php',
+            'title' => "Applicant Detials",
+            'variables' => [
+                'details' => $details
+            ]
+            ];
+ 
+    }
+
 
 
     public function register()

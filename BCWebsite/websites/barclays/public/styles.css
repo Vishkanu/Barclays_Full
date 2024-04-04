@@ -469,17 +469,25 @@ footer {
 /* ====================dashboard design ====================== */
 
 .nav-panel{
-    grid-area: nav;
+    /* grid-area: nav; */
+    background-color: #00a4eb;
+
+
 }
 .dashboard-content{
     grid-area: content;
 }
-.dashboard{
+/* .dashboard{
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: auto;
     grid-template-areas: 
     "nav content";
+} */
+
+.dashboard h1,
+.applicant-details h1{
+    padding: 30px;
 }
 
 
@@ -487,6 +495,7 @@ footer {
 .nav-panel ul{
     list-style: none;
     padding: 0;
+    display: flex;
 }
 .nav-panel a{
     display: block;
@@ -498,7 +507,8 @@ footer {
     font-size: calc(15px + 0.3567vw);
     font-weight: bold;
 }
-.nav-panel a:hover{
+.nav-panel a:hover,
+.search-bar form input:last-child:hover{
     background-color: #f4f4f4;
     color: #00a4eb;
 }
@@ -515,32 +525,61 @@ footer {
     min-height: 90vh;
     
 }
+.applications{
+    width: 80%;
+    margin: 0 10%;
+}
 
 .applications>div {
     margin: 5px 30px;
+    
 }
 
 .applications a{
     text-decoration: none;
-    padding: 5px 0;
+    padding: 10px 0;
 }
+
+
 
 .application>h2,
 .application>h4{
     padding: 0 10px
 }
 
+.applications>div>a:nth-child(even){
+    opacity: 0.5;
+}
+
 .application{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: baseline;
+    border-bottom: 3px #00a4eb;
 }
+.application:hover{
+    background-color: lightgray;
+    color: #00a4eb;
+}
+.search-bar form{    
+    width: 90%;
+    margin: 0 10%;
+}
+
 .search-bar form input:first-child{
-    width: 50%
+    width: 80%;
+    border: 1px solid #00a4eb;
+    height: calc(20px + 1.564vh);
+    
 }
 
 .search-bar form input:last-child{
     padding: 0 10px;
+    border: 1px solid #00a4eb;
+    height: calc(20px + 1.564vh);
+    background-color: #00a4eb;
+    font-weight: bold;
+    color: white;
 }
