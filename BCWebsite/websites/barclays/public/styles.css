@@ -465,3 +465,82 @@ footer {
 .btn-next:hover {
     background-color: #003087;
 }
+
+/* ====================dashboard design ====================== */
+
+.nav-panel{
+    grid-area: nav;
+}
+.dashboard-content{
+    grid-area: content;
+}
+.dashboard{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav content";
+}
+
+
+
+.nav-panel ul{
+    list-style: none;
+    padding: 0;
+}
+.nav-panel a{
+    display: block;
+    text-decoration: none;
+    color: #f4f4f4;
+    background-color:#00a4eb;
+    padding: 10px;
+    text-align: center;
+    font-size: calc(15px + 0.3567vw);
+    font-weight: bold;
+}
+.nav-panel a:hover{
+    background-color: #f4f4f4;
+    color: #00a4eb;
+}
+.nav-panel li{
+    width: 100%;
+}
+
+.selected{
+    background-color: #f4f4f4;
+    color: #00a4eb;
+}
+
+.dashboard-content{
+    min-height: 90vh;
+    
+}
+
+.applications>div {
+    margin: 5px 30px;
+}
+
+.applications a{
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.application>h2,
+.application>h4{
+    padding: 0 10px
+}
+
+.application{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.search-bar form input:first-child{
+    width: 50%
+}
+
+.search-bar form input:last-child{
+    padding: 0 10px;
+}

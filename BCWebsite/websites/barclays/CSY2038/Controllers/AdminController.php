@@ -39,7 +39,7 @@ class AdminController
     public function dashboard()
     {
         $this->session();
-        $this->chklogin();
+        //$this->chklogin();
 
         return [
             'template' => 'admin/dashboard.html.php',
